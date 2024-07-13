@@ -13,10 +13,24 @@ Table of Contents
 Introduction
 This API serves as a foundation for managing various entities such as organisations, contents (blogs or articles), users, and contact messages. It follows the OpenAPI 3.0 specification and is designed to be straightforward to integrate and extend.
 Setup
-To set up and run the API locally:
-1. Clone this repository.
-2. Install dependencies npm install.
-3. Start the server npm start
+## Installation
+To set up this project locally, follow these steps:
+
+1. Clone the repository:
+```
+git clone https://github.com/Shabzynana/UserOrgApi.git
+cd UserOrgApi
+```
+
+2. Install dependencies:
+```
+npm install
+```
+3. Start the server:
+```
+npm start
+```
+
 Endpoints
 Organisation
 POST /organisation
