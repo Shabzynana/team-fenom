@@ -1,19 +1,21 @@
-Swagger Boilerplate - OpenAPI 3.0
+# Swagger Boilerplate - OpenAPI 3.0
 This repository contains a boilerplate for an API designed using OpenAPI 3.0. It defines endpoints and schemas for managing organisations, contents, users, and contacts.
-Table of Contents
-- Introduction
-- Setup
-- Endpoints
-- Users
-- Organisation
-- Contents
-- Contacts
-- Schemas
-- Contributing
-Introduction
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Setup](#setup)
+- [Endpoints](#endpoints)
+  - [Users](#users)
+  - [Organisation](#organisation)
+  - [Contents](#contents)
+  - [Contacts](#contacts)
+- [Schemas](#schemas)
+- [Contributing](#contributing)
+  
+## Introduction
 This API serves as a foundation for managing various entities such as organisations, contents (blogs or articles), users, and contact messages. It follows the OpenAPI 3.0 specification and is designed to be straightforward to integrate and extend.
-Setup
-# Installation
+
+## Setup
 To set up this project locally, follow these steps:
 
 1. Clone the repository:
@@ -31,10 +33,9 @@ npm install
 npm start
 ```
 
-# Endpoint
+## Endpoints
 
-
-## User
+### Users
 
 #### 1. Update a User
 
@@ -109,7 +110,6 @@ GET /users
       "created_at": "2023-01-01T00:00:00Z",
       "updated_at": "2023-01-01T00:00:00Z"
     },
-    ...
   ]
   ```
 
@@ -333,7 +333,6 @@ GET /contents
       "title": "Content Title",
       "description": "Content Description"
     },
-    ...
   ]
   ```
 
@@ -360,7 +359,6 @@ GET /contents/{userId}
       "title": "Content Title",
       "description": "Content Description"
     },
-    ...
   ]
   ```
 - \`404 Not Found\` - User not found.
@@ -420,19 +418,25 @@ POST /contact
 
 ## Security
 This API uses API key authentication (`ApiKeyAuth`) via the `authorization` header.
+
 ## Schemas
+
 ### Organisation
+
 Defines the schema for an organisation object, including `id`, `userId`, `name`, `address`, `email`, `phone`, `created_at`, and `updated_at`.
+
 ### Other Schemas
+
 - `contents_body`: Schema for creating/updating content.
 - `inline_response_200`, `inline_response_200_1`: Response schemas for various endpoints.
 - `contact`: Schema for creating a contact message.
 - `users_id_body`: Schema for updating a user.
+
 ## Contributing
+
 Contributions are welcome! Please fork this repository and submit a pull request with your improvements.
 ---
-Feel free to adjust the sections, add more details, or include any specific setup instructions as per your project's needs. (edited) 
-3:49
-See sample of readMe file
+
+Feel free to adjust the sections, add more details, or include any specific setup instructions as per your project's needs.
 
 
