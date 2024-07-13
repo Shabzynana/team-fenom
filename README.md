@@ -282,105 +282,105 @@ GET /users/{id}
 - \`404 Not Found\` - User not found.
 
 
-## Organization
+## Organisation
 
-#### 11. Create an Organization
+#### 11. Create an Organisation
 
 **Endpoint**
 
 ```
-POST /organizations
+POST /organisations
 ```
 
 **Request Body**
 
 ```json
 {
-  "name": "Organization Name",
+  "name": "Organisation Name",
   "address": "123 Main St",
-  "email": "contact@organization.com",
+  "email": "contact@organisation.com",
   "phone": "123-456-7890"
 }
 ```
 
 **Responses**
 
-- \`201 Created\` - Organization successfully created.
+- \`201 Created\` - Organisation successfully created.
 - \`400 Bad Request\` - Missing or invalid fields.
 
-#### 12. Update an Organization
+#### 12. Update an Organisation
 
 **Endpoint**
 
 ```
-PUT /organizations/{id}
+PUT /organisations/{id}
 ```
 
 **Request Parameters**
 
-- \`id\` (path parameter) - The ID of the organization to update.
+- \`id\` (path parameter) - The ID of the organisation to update.
 
 **Request Body**
 
 ```json
 {
-  "name": "Updated Organization Name",
+  "name": "Updated Organisation Name",
   "address": "123 Main St, Suite 200",
-  "email": "newcontact@organization.com",
+  "email": "newcontact@organisation.com",
   "phone": "098-765-4321"
 }
 ```
 
 **Responses**
 
-- \`200 OK\` - Organization updated successfully.
+- \`200 OK\` - Organisation updated successfully.
 - \`400 Bad Request\` - Missing or invalid fields.
-- \`404 Not Found\` - Organization not found.
+- \`404 Not Found\` - Organisation not found.
 
-#### 13. Delete an Organization
-
-**Endpoint**
-
-```
-DELETE /organizations/{id}
-```
-
-**Request Parameters**
-
-- \`id\` (path parameter) - The ID of the organization to delete.
-
-**Responses**
-
-- \`204 No Content\` - Organization deleted successfully.
-- \`404 Not Found\` - Organization not found.
-
-#### 14. Read an Organization by ID
+#### 13. Delete an Organisation
 
 **Endpoint**
 
 ```
-GET /organizations/{id}
+DELETE /organisations/{id}
 ```
 
 **Request Parameters**
 
-- \`id\` (path parameter) - The ID of the organization to retrieve.
+- \`id\` (path parameter) - The ID of the organisation to delete.
 
 **Responses**
 
-- \`200 OK\` - Returns the organization details.
+- \`204 No Content\` - Organisation deleted successfully.
+- \`404 Not Found\` - Organisation not found.
+
+#### 14. Read an Organisation by ID
+
+**Endpoint**
+
+```
+GET /organisations/{id}
+```
+
+**Request Parameters**
+
+- \`id\` (path parameter) - The ID of the organisation to retrieve.
+
+**Responses**
+
+- \`200 OK\` - Returns the organisation details.
   ```json
   {
     "id": 1,
-    "name": "Organization Name",
+    "name": "Organisation Name",
     "address": "123 Main St",
-    "email": "contact@organization.com",
+    "email": "contact@organisation.com",
     "phone": "123-456-7890",
     "created_at": "2023-01-01T00:00:00Z",
     "updated_at": "2023-01-01T00:00:00Z"
   }
   ```
-- \`404 Not Found\` - Organization not found.
+- \`404 Not Found\` - Organisation not found.
 
 
 ## Content
