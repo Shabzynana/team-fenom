@@ -311,15 +311,33 @@ GET /contents/{id}
   ```
 - \`404 Not Found\` - Content not found.
 
-### Users
-#### GET /users
-Retrieve all users.
-#### GET /users/{id}
-Retrieve a user by ID.
-#### PUT /users/{id}
-Update a user by ID.
-#### DELETE /users/{id}
-Delete a user by ID.
+
+## Contact Us
+
+#### 11. Create a Contant Us
+
+**Endpoint**
+
+```
+POST /contact
+```
+
+**Request Body**
+
+```json
+{
+  "id": 1,
+  "message": "I want to have a meeting wth you",
+  "phone": "12345678"
+  "email": "example@example.com"
+}
+```
+
+**Responses**
+
+- \`201 Created\` - Content created successfully.
+- \`400 Bad Request\` - Missing or invalid fields.
+
 ### Contacts
 #### POST /contacts
 Create a new contact message.
@@ -327,6 +345,8 @@ Create a new contact message.
   - `message` (string): Message content.
   - `phone` (string): Phone number of the contact.
   - `email` (string, format: email): Email address of the contact.
+ 
+
 ## Security
 This API uses API key authentication (`ApiKeyAuth`) via the `authorization` header.
 ## Schemas
