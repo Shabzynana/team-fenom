@@ -13,7 +13,7 @@ Table of Contents
 Introduction
 This API serves as a foundation for managing various entities such as organisations, contents (blogs or articles), users, and contact messages. It follows the OpenAPI 3.0 specification and is designed to be straightforward to integrate and extend.
 Setup
-## Installation
+# Installation
 To set up this project locally, follow these steps:
 
 1. Clone the repository:
@@ -31,7 +31,7 @@ npm install
 npm start
 ```
 
-### Endpoint
+## Endpoint
 
 Organisation
 POST /organisation
