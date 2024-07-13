@@ -33,6 +33,126 @@ npm start
 
 # Endpoint
 
+
+## User
+
+#### 7. Update a User
+
+**Endpoint**
+
+```
+PUT /users/{id}
+```
+
+**Request Parameters**
+
+- \`id\` (path parameter) - The ID of the user to update.
+
+**Request Body**
+
+```json
+{
+  "email": "user@example.com",
+  "password": "newpassword123",
+  "first_name": "John",
+  "last_name": "Doe",
+  "profile_picture": "url/to/profile/picture",
+  "role": "user",
+  "isverified": true
+}
+```
+
+**Responses**
+
+- \`200 OK\` - User updated successfully.
+- \`400 Bad Request\` - Missing or invalid fields.
+- \`404 Not Found\` - User not found.
+
+#### 8. Delete a User
+
+**Endpoint**
+
+```
+DELETE /users/{id}
+```
+
+**Request Parameters**
+
+- \`id\` (path parameter) - The ID of the user to delete.
+
+**Responses**
+
+- \`204 No Content\` - User deleted successfully.
+- \`404 Not Found\` - User not found.
+
+#### 9. Read All Users
+
+**Endpoint**
+
+```
+GET /users
+```
+
+**Responses**
+
+- \`200 OK\` - Returns a list of users.
+  ```json
+  [
+    {
+      "id": 1,
+      "email": "user1@example.com",
+      "first_name": "John",
+      "last_name": "Doe",
+      "profile_picture": "url/to/profile/picture",
+      "role": "user",
+      "isverified": true,
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-01-01T00:00:00Z"
+    },
+    ...
+  ]
+  ```
+
+#### 10. Read a User by ID
+
+**Endpoint**
+
+```
+GET /users/{id}
+```
+
+**Request Parameters**
+
+- \`id\` (path parameter) - The ID of the user to retrieve.
+
+**Responses**
+
+- \`200 OK\` - Returns the user details.
+  ```json
+  {
+    "id": 1,
+    "email": "user@example.com",
+    "first_name": "John",
+    "last_name": "Doe",
+    "profile_picture": "url/to/profile/picture",
+    "role": "user",
+    "isverified": true,
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z"
+  }
+  ```
+- \`404 Not Found\` - User not found.
+
+
+
+
+
+
+
+
+
+
+
 Organisation
 
 POST /organisation
