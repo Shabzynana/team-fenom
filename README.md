@@ -144,7 +144,7 @@ GET /users/{id}
 - \`404 Not Found\` - User not found.
 
 
-### Organization Management
+## Organization
 
 #### 5. Create an Organization
 
@@ -244,21 +244,6 @@ GET /organizations/{id}
   ```
 - \`404 Not Found\` - Organization not found.
 
-
-
-
-## Organisation
-
-POST /organisation
-Create a new organisation.
-- **Request Body**: JSON object with the following properties:
-  - `userId` (string): ID of the user creating the organisation.
-  - `name` (string): Name of the organisation.
-  - `address` (string): Address of the organisation.
-  - `email` (string, format: email): Email address of the organisation.
-  - `phone` (string): Phone number of the organisation.
-  - `created_at` (string, format: date-time): Timestamp of creation.
-  - `updated_at` (string, format: date-time): Timestamp of last update.
 
 ## Content
 
