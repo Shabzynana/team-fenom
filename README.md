@@ -338,14 +338,6 @@ POST /contact
 - \`201 Created\` - Content created successfully.
 - \`400 Bad Request\` - Missing or invalid fields.
 
-### Contacts
-#### POST /contacts
-Create a new contact message.
-- **Request Body**: JSON object with the following properties:
-  - `message` (string): Message content.
-  - `phone` (string): Phone number of the contact.
-  - `email` (string, format: email): Email address of the contact.
- 
 
 ## Security
 This API uses API key authentication (`ApiKeyAuth`) via the `authorization` header.
