@@ -38,7 +38,7 @@ npm start
 
 ## Endpoints
 
-### User Authentication and Management
+### Authentication
 
 #### 1. Register a New User
 
