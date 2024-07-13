@@ -11,6 +11,7 @@ This repository contains a boilerplate for an API designed using OpenAPI 3.0. It
   - [Content](#content)
   - [Contact Us](#contact)
 - [Schemas](#schemas)
+- [Contributors](#contributors)
 - [Contribution](#contribution)
   
 ## Introduction
@@ -584,10 +585,10 @@ Defines the schema for an organisation object, including `id`, `userId`, `name`,
 - `users_id_body`: Schema for updating a user.
 
 ## Conributors
-[Adebiyi Femi](https://github.com/Shabzynana)
-[Tosin Alabi](https://github.com/alatos2)
-[Faruq Oladunjoye](https://github.com/faruqoladunjoye)
-[Ayomide Francis-Akinlolu](https://github.com/Ayomisco/)
+-[Adebiyi Femi](https://github.com/Shabzynana)
+-[Tosin Alabi](https://github.com/alatos2)
+-[Faruq Oladunjoye](https://github.com/faruqoladunjoye)
+-[Ayomide Francis-Akinlolu](https://github.com/Ayomisco/)
 
 ## Contribution
 
