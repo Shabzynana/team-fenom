@@ -527,14 +527,14 @@ GET /contents/{id}
 - \`404 Not Found\` - Content not found.
 
 
-## Contact Us
+## Contact
 
-#### 21. Create a Contant Us
+#### 21. Create a Contant Us message
 
 **Endpoint**
 
 ```
-POST /contact
+POST /contacts
 ```
 
 **Request Body**
@@ -550,7 +550,7 @@ POST /contact
 
 **Responses**
 
-- \`201 Created\` - Content created successfully.
+- \`201 Created\` - Contact created successfully.
 - \`400 Bad Request\` - Missing or invalid fields.
 
 
