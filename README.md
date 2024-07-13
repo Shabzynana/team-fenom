@@ -11,7 +11,7 @@ This repository contains a boilerplate for an API designed using OpenAPI 3.0. It
   - [Content](#content)
   - [Contact Us](#contact)
 - [Schemas](#schemas)
-- [Contributing](#contribution)
+- [Contribution](#contribution)
   
 ## Introduction
 This API serves as a foundation for managing various entities such as organisations, contents (blogs or articles), users, and contact messages. It follows the OpenAPI 3.0 specification and is designed to be straightforward to integrate and extend.
