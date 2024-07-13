@@ -144,6 +144,107 @@ GET /users/{id}
 - \`404 Not Found\` - User not found.
 
 
+### Organization Management
+
+#### 5. Create an Organization
+
+**Endpoint**
+
+```
+POST /organizations
+```
+
+**Request Body**
+
+```json
+{
+  "name": "Organization Name",
+  "address": "123 Main St",
+  "email": "contact@organization.com",
+  "phone": "123-456-7890"
+}
+```
+
+**Responses**
+
+- \`201 Created\` - Organization successfully created.
+- \`400 Bad Request\` - Missing or invalid fields.
+
+#### 6. Update an Organization
+
+**Endpoint**
+
+```
+PUT /organizations/{id}
+```
+
+**Request Parameters**
+
+- \`id\` (path parameter) - The ID of the organization to update.
+
+**Request Body**
+
+```json
+{
+  "name": "Updated Organization Name",
+  "address": "123 Main St, Suite 200",
+  "email": "newcontact@organization.com",
+  "phone": "098-765-4321"
+}
+```
+
+**Responses**
+
+- \`200 OK\` - Organization updated successfully.
+- \`400 Bad Request\` - Missing or invalid fields.
+- \`404 Not Found\` - Organization not found.
+
+#### 7. Delete an Organization
+
+**Endpoint**
+
+```
+DELETE /organizations/{id}
+```
+
+**Request Parameters**
+
+- \`id\` (path parameter) - The ID of the organization to delete.
+
+**Responses**
+
+- \`204 No Content\` - Organization deleted successfully.
+- \`404 Not Found\` - Organization not found.
+
+#### 8. Read an Organization by ID
+
+**Endpoint**
+
+```
+GET /organizations/{id}
+```
+
+**Request Parameters**
+
+- \`id\` (path parameter) - The ID of the organization to retrieve.
+
+**Responses**
+
+- \`200 OK\` - Returns the organization details.
+  ```json
+  {
+    "id": 1,
+    "name": "Organization Name",
+    "address": "123 Main St",
+    "email": "contact@organization.com",
+    "phone": "123-456-7890",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z"
+  }
+  ```
+- \`404 Not Found\` - Organization not found.
+
+
 
 
 ## Organisation
@@ -158,13 +259,6 @@ Create a new organisation.
   - `phone` (string): Phone number of the organisation.
   - `created_at` (string, format: date-time): Timestamp of creation.
   - `updated_at` (string, format: date-time): Timestamp of last update.
-GET /organisation/{id}
-Retrieve an organisation by ID.
-PUT /organisation/{id}
-Update an existing organisation by ID.
-#### DELETE /organisation/{id}
-Delete an organisation by ID.
-
 
 ## Content
 
