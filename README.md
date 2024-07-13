@@ -146,14 +146,7 @@ GET /users/{id}
 
 
 
-
-
-
-
-
-
-
-Organisation
+## Organisation
 
 POST /organisation
 Create a new organisation.
@@ -173,7 +166,7 @@ Update an existing organisation by ID.
 Delete an organisation by ID.
 
 
-### Content
+## Content
 
 #### 11. Create a Content
 
