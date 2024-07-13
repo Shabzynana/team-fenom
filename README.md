@@ -36,7 +36,7 @@ npm start
 
 ## User
 
-#### 7. Update a User
+#### 1. Update a User
 
 **Endpoint**
 
@@ -68,7 +68,7 @@ PUT /users/{id}
 - \`400 Bad Request\` - Missing or invalid fields.
 - \`404 Not Found\` - User not found.
 
-#### 8. Delete a User
+#### 2. Delete a User
 
 **Endpoint**
 
@@ -85,7 +85,7 @@ DELETE /users/{id}
 - \`204 No Content\` - User deleted successfully.
 - \`404 Not Found\` - User not found.
 
-#### 9. Read All Users
+#### 3. Read All Users
 
 **Endpoint**
 
@@ -113,7 +113,7 @@ GET /users
   ]
   ```
 
-#### 10. Read a User by ID
+#### 4. Read a User by ID
 
 **Endpoint**
 
@@ -168,7 +168,7 @@ Delete an organisation by ID.
 
 ## Content
 
-#### 11. Create a Content
+#### 9. Create a Content
 
 **Endpoint**
 
@@ -191,7 +191,7 @@ POST /contents
 - \`201 Created\` - Content created successfully.
 - \`400 Bad Request\` - Missing or invalid fields.
 
-#### 12. Update a Content
+#### 10. Update a Content
 
 **Endpoint**
 
@@ -218,7 +218,7 @@ PUT /contents/{id}
 - \`400 Bad Request\` - Missing or invalid fields.
 - \`404 Not Found\` - Content not found.
 
-#### 13. Delete a Content
+#### 11. Delete a Content
 
 **Endpoint**
 
@@ -235,7 +235,7 @@ DELETE /contents/{id}
 - \`204 No Content\` - Content deleted successfully.
 - \`404 Not Found\` - Content not found.
 
-#### 14. Read All Content in Blog
+#### 12. Read All Content in Blog
 
 **Endpoint**
 
@@ -258,7 +258,7 @@ GET /contents
   ]
   ```
 
-#### 15. Read All Content for a Particular User
+#### 13. Read All Content for a Particular User
 
 **Endpoint**
 
@@ -286,7 +286,7 @@ GET /contents/{userId}
   ```
 - \`404 Not Found\` - User not found.
 
-#### 16. Read a Content by ID
+#### 14. Read a Content by ID
 
 **Endpoint**
 
@@ -314,7 +314,7 @@ GET /contents/{id}
 
 ## Contact Us
 
-#### 11. Create a Contant Us
+#### 15. Create a Contant Us
 
 **Endpoint**
 
