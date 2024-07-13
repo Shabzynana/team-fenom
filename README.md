@@ -53,7 +53,7 @@ Update an existing organisation by ID.
 Delete an organisation by ID.
 
 
-### Content Management
+### Content
 
 #### 11. Create a Content
 
@@ -198,22 +198,6 @@ GET /contents/{contentId}
   ```
 - \`404 Not Found\` - Content not found.
 
-
-
-
-### Contents
-#### GET /contents
-Retrieve all contents (blogs/articles).
-#### POST /contents
-Create a new content (blog/article).
-#### GET /content/{id}
-Retrieve a content by ID.
-#### PUT /content/{id}
-Update a content by ID.
-#### DELETE /content/{id}
-Delete a content by ID.
-#### GET /contents/{userId}
-Retrieve all contents associated with a specific user.
 ### Users
 #### GET /users
 Retrieve all users.
