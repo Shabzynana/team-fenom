@@ -8,7 +8,6 @@ Table of Contents
 - Contents
 - Users
 - Contacts
-- Security
 - Schemas
 - Contributing
 Introduction
