@@ -57,7 +57,7 @@ npm start
 **Endpoint**
 
 ```
-POST /auth/register
+POST /user/register
 ```
 
 **Request Body**
@@ -82,7 +82,7 @@ POST /auth/register
 **Endpoint**
 
 ```
-POST /auth/login
+POST /user/login
 ```
 
 **Request Body**
@@ -109,7 +109,7 @@ POST /auth/login
 **Endpoint**
 
 ```
-POST /auth/logout
+POST /user/logout
 ```
 
 **Responses**
@@ -121,7 +121,7 @@ POST /auth/logout
 **Endpoint**
 
 ```
-POST /auth/verify-email
+POST /user/account_verification_otp
 ```
 
 **Request Body**
@@ -144,7 +144,7 @@ POST /auth/verify-email
 **Endpoint**
 
 ```
-POST /auth/request-reset-password
+POST /user/forgot_password
 ```
 
 **Request Body**
@@ -165,7 +165,7 @@ POST /auth/request-reset-password
 **Endpoint**
 
 ```
-POST /auth/reset-password
+POST /user/reset_password
 ```
 
 **Request Body**
