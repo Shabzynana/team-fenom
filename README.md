@@ -35,9 +35,146 @@ npm start
 
 ## Endpoints
 
+
+## Endpoints
+
+### User Authentication and Management
+
+#### 1. Register a New User
+
+**Endpoint**
+
+```
+POST /auth/register
+```
+
+**Request Body**
+
+```json
+{
+  "email": "user@example.com",
+  "password": "password123",
+  "first_name": "John",
+  "last_name": "Doe"
+}
+```
+
+**Responses**
+
+- \`201 Created\` - User successfully registered.
+- \`400 Bad Request\` - Missing or invalid fields.
+
+#### 2. Login a User
+
+**Endpoint**
+
+```
+POST /auth/login
+```
+
+**Request Body**
+
+```json
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+```
+
+**Responses**
+
+- \`200 OK\` - Login successful. Returns a token.
+  ```json
+  {
+    "token": "your-jwt-token"
+  }
+  ```
+- \`401 Unauthorized\` - Invalid credentials.
+
+#### 3. Logout a User
+
+**Endpoint**
+
+```
+POST /auth/logout
+```
+
+**Responses**
+
+- \`200 OK\` - Logout successful.
+
+#### 4. Verify Email
+
+**Endpoint**
+
+```
+POST /auth/verify-email
+```
+
+**Request Body**
+
+```json
+{
+  "email": "user@example.com",
+  "verification_code": "123456"
+}
+```
+
+**Responses**
+
+- \`200 OK\` - Email verified successfully.
+- \`400 Bad Request\` - Missing or invalid fields.
+- \`404 Not Found\` - User not found.
+
+#### 5. Request Password Reset
+
+**Endpoint**
+
+```
+POST /auth/request-reset-password
+```
+
+**Request Body**
+
+```json
+{
+  "email": "user@example.com"
+}
+```
+
+**Responses**
+
+- \`200 OK\` - Password reset request successful.
+- \`404 Not Found\` - User not found.
+
+#### 6. Reset Password
+
+**Endpoint**
+
+```
+POST /auth/reset-password
+```
+
+**Request Body**
+
+```json
+{
+  "email": "user@example.com",
+  "reset_token": "your-reset-token",
+  "new_password": "newpassword123"
+}
+```
+
+**Responses**
+
+- \`200 OK\` - Password reset successful.
+- \`400 Bad Request\` - Missing or invalid fields.
+- \`404 Not Found\` - User not found.
+
+
 ### Users
 
-#### 1. Update a User
+#### 7. Update a User
 
 **Endpoint**
 
@@ -69,7 +206,7 @@ PUT /users/{id}
 - \`400 Bad Request\` - Missing or invalid fields.
 - \`404 Not Found\` - User not found.
 
-#### 2. Delete a User
+#### 8. Delete a User
 
 **Endpoint**
 
@@ -86,7 +223,7 @@ DELETE /users/{id}
 - \`204 No Content\` - User deleted successfully.
 - \`404 Not Found\` - User not found.
 
-#### 3. Read All Users
+#### 9. Read All Users
 
 **Endpoint**
 
@@ -113,7 +250,7 @@ GET /users
   ]
   ```
 
-#### 4. Read a User by ID
+#### 10. Read a User by ID
 
 **Endpoint**
 
@@ -146,7 +283,7 @@ GET /users/{id}
 
 ## Organization
 
-#### 5. Create an Organization
+#### 11. Create an Organization
 
 **Endpoint**
 
@@ -170,7 +307,7 @@ POST /organizations
 - \`201 Created\` - Organization successfully created.
 - \`400 Bad Request\` - Missing or invalid fields.
 
-#### 6. Update an Organization
+#### 12. Update an Organization
 
 **Endpoint**
 
@@ -199,7 +336,7 @@ PUT /organizations/{id}
 - \`400 Bad Request\` - Missing or invalid fields.
 - \`404 Not Found\` - Organization not found.
 
-#### 7. Delete an Organization
+#### 13. Delete an Organization
 
 **Endpoint**
 
@@ -216,7 +353,7 @@ DELETE /organizations/{id}
 - \`204 No Content\` - Organization deleted successfully.
 - \`404 Not Found\` - Organization not found.
 
-#### 8. Read an Organization by ID
+#### 14. Read an Organization by ID
 
 **Endpoint**
 
@@ -247,7 +384,7 @@ GET /organizations/{id}
 
 ## Content
 
-#### 9. Create a Content
+#### 15. Create a Content
 
 **Endpoint**
 
@@ -270,7 +407,7 @@ POST /contents
 - \`201 Created\` - Content created successfully.
 - \`400 Bad Request\` - Missing or invalid fields.
 
-#### 10. Update a Content
+#### 16. Update a Content
 
 **Endpoint**
 
@@ -297,7 +434,7 @@ PUT /contents/{id}
 - \`400 Bad Request\` - Missing or invalid fields.
 - \`404 Not Found\` - Content not found.
 
-#### 11. Delete a Content
+#### 17. Delete a Content
 
 **Endpoint**
 
@@ -314,7 +451,7 @@ DELETE /contents/{id}
 - \`204 No Content\` - Content deleted successfully.
 - \`404 Not Found\` - Content not found.
 
-#### 12. Read All Content in Blog
+#### 18. Read All Content in Blog
 
 **Endpoint**
 
@@ -336,7 +473,7 @@ GET /contents
   ]
   ```
 
-#### 13. Read All Content for a Particular User
+#### 19. Read All Content for a Particular User
 
 **Endpoint**
 
@@ -363,7 +500,7 @@ GET /contents/{userId}
   ```
 - \`404 Not Found\` - User not found.
 
-#### 14. Read a Content by ID
+#### 20. Read a Content by ID
 
 **Endpoint**
 
@@ -391,7 +528,7 @@ GET /contents/{id}
 
 ## Contact Us
 
-#### 15. Create a Contant Us
+#### 21. Create a Contant Us
 
 **Endpoint**
 
