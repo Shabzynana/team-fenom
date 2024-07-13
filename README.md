@@ -4,9 +4,9 @@ Table of Contents
 - Introduction
 - Setup
 - Endpoints
+- Users
 - Organisation
 - Contents
-- Users
 - Contacts
 - Schemas
 - Contributing
