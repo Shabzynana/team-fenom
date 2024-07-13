@@ -33,8 +33,6 @@ npm install
 npm start
 ```
 
-## Endpoints
-
 
 ## Endpoints
 
