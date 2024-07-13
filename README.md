@@ -196,7 +196,7 @@ POST /contents
 **Endpoint**
 
 ```
-PUT /contents/{contentId}
+PUT /contents/{id}
 ```
 
 **Request Parameters**
@@ -223,12 +223,12 @@ PUT /contents/{contentId}
 **Endpoint**
 
 ```
-DELETE /contents/{contentId}
+DELETE /contents/{id}
 ```
 
 **Request Parameters**
 
-- \`contentId\` (path parameter) - The ID of the content to delete.
+- \`id\` (path parameter) - The ID of the content to delete.
 
 **Responses**
 
@@ -263,7 +263,7 @@ GET /contents
 **Endpoint**
 
 ```
-GET /contents/user/{userId}
+GET /contents/{userId}
 ```
 
 **Request Parameters**
@@ -291,7 +291,7 @@ GET /contents/user/{userId}
 **Endpoint**
 
 ```
-GET /contents/{contentId}
+GET /contents/{id}
 ```
 
 **Request Parameters**
