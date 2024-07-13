@@ -569,8 +569,8 @@ Defines the schema for an organisation object, including `id`, `userId`, `name`,
 
 ## Contribution
 
-Contributions are welcome! Please fork this repository.
----
+### Contributions are welcome!
+
 
 Feel free to adjust the sections, add more details, or include any specific setup instructions as per your project's needs.
 
