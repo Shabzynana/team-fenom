@@ -31,7 +31,8 @@ npm install
 npm start
 ```
 
-Endpoints
+### Endpoint
+
 Organisation
 POST /organisation
 Create a new organisation.
