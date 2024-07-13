@@ -31,9 +31,10 @@ npm install
 npm start
 ```
 
-## Endpoint
+# Endpoint
 
 Organisation
+
 POST /organisation
 Create a new organisation.
 - **Request Body**: JSON object with the following properties:
@@ -50,6 +51,156 @@ PUT /organisation/{id}
 Update an existing organisation by ID.
 #### DELETE /organisation/{id}
 Delete an organisation by ID.
+
+
+### Content Management
+
+#### 11. Create a Content
+
+**Endpoint**
+
+```
+POST /contents
+```
+
+**Request Body**
+
+```json
+{
+  "userId": 1,
+  "title": "Content Title",
+  "description": "Content Description"
+}
+```
+
+**Responses**
+
+- \`201 Created\` - Content created successfully.
+- \`400 Bad Request\` - Missing or invalid fields.
+
+#### 12. Update a Content
+
+**Endpoint**
+
+```
+PUT /contents/{contentId}
+```
+
+**Request Parameters**
+
+- \`contentId\` (path parameter) - The ID of the content to update.
+
+**Request Body**
+
+```json
+{
+  "title": "Updated Title",
+  "description": "Updated Description"
+}
+```
+
+**Responses**
+
+- \`200 OK\` - Content updated successfully.
+- \`400 Bad Request\` - Missing or invalid fields.
+- \`404 Not Found\` - Content not found.
+
+#### 13. Delete a Content
+
+**Endpoint**
+
+```
+DELETE /contents/{contentId}
+```
+
+**Request Parameters**
+
+- \`contentId\` (path parameter) - The ID of the content to delete.
+
+**Responses**
+
+- \`204 No Content\` - Content deleted successfully.
+- \`404 Not Found\` - Content not found.
+
+#### 14. Read All Content in Blog
+
+**Endpoint**
+
+```
+GET /contents
+```
+
+**Responses**
+
+- \`200 OK\` - Returns a list of all content.
+  ```json
+  [
+    {
+      "contentId": 1,
+      "userId": 1,
+      "title": "Content Title",
+      "description": "Content Description"
+    },
+    ...
+  ]
+  ```
+
+#### 15. Read All Content for a Particular User
+
+**Endpoint**
+
+```
+GET /contents/user/{userId}
+```
+
+**Request Parameters**
+
+- \`userId\` (path parameter) - The ID of the user to retrieve content for.
+
+**Responses**
+
+- \`200 OK\` - Returns a list of content for the specified user.
+  ```json
+  [
+    {
+      "contentId": 1,
+      "userId": 1,
+      "title": "Content Title",
+      "description": "Content Description"
+    },
+    ...
+  ]
+  ```
+- \`404 Not Found\` - User not found.
+
+#### 16. Read a Content by ID
+
+**Endpoint**
+
+```
+GET /contents/{contentId}
+```
+
+**Request Parameters**
+
+- \`contentId\` (path parameter) - The ID of the content to retrieve.
+
+**Responses**
+
+- \`200 OK\` - Returns the content details.
+  ```json
+  {
+    "contentId": 1,
+    "userId": 1,
+    "title": "Content Title",
+    "description": "Content Description"
+  }
+  ```
+- \`404 Not Found\` - Content not found.
+
+
+
+
 ### Contents
 #### GET /contents
 Retrieve all contents (blogs/articles).
