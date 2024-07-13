@@ -584,10 +584,13 @@ Defines the schema for an organisation object, including `id`, `userId`, `name`,
 - `contact`: Schema for creating a contact message.
 - `users_id_body`: Schema for updating a user.
 
-## Conributors
+## Contributors
 -[Adebiyi Femi](https://github.com/Shabzynana)
+
 -[Tosin Alabi](https://github.com/alatos2)
+
 -[Faruq Oladunjoye](https://github.com/faruqoladunjoye)
+
 -[Ayomide Francis-Akinlolu](https://github.com/Ayomisco/)
 
 ## Contribution
