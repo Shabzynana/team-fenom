@@ -5,12 +5,13 @@ This repository contains a boilerplate for an API designed using OpenAPI 3.0. It
 - [Introduction](#introduction)
 - [Setup](#setup)
 - [Endpoints](#endpoints)
+  - [Authentication](#authentication)
   - [Users](#users)
   - [Organisation](#organisation)
-  - [Contents](#contents)
-  - [Contacts](#contacts)
+  - [Content](#content)
+  - [Contact Us](#contact)
 - [Schemas](#schemas)
-- [Contributing](#contributing)
+- [Contributing](#contribution)
   
 ## Introduction
 This API serves as a foundation for managing various entities such as organisations, contents (blogs or articles), users, and contact messages. It follows the OpenAPI 3.0 specification and is designed to be straightforward to integrate and extend.
@@ -50,10 +51,11 @@ POST /auth/register
 
 ```json
 {
+  "first_name": "John",
+  "last_name": "Doe",
+  "username": "johndoe24",
   "email": "user@example.com",
   "password": "password123",
-  "first_name": "John",
-  "last_name": "Doe"
 }
 ```
 
@@ -188,10 +190,11 @@ PUT /users/{id}
 
 ```json
 {
-  "email": "user@example.com",
-  "password": "newpassword123",
   "first_name": "John",
   "last_name": "Doe",
+  "username": "johndoe24"
+  "email": "user@example.com",
+  "password": "newpassword123",
   "profile_picture": "url/to/profile/picture",
   "role": "user",
   "isverified": true
