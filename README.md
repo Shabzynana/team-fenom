@@ -1,4 +1,4 @@
-# Swagger Boilerplate - OpenAPI 3.0
+# Team Fenom Boilerplate
 This repository contains a boilerplate for an API designed using OpenAPI 3.0. It defines endpoints and schemas for managing organisations, contents, users, and contacts.
 
 ## Table of Contents
