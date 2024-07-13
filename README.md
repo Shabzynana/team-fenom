@@ -18,10 +18,12 @@ This API serves as a foundation for managing various entities such as organisati
 
   <p align="center">
     <br />
+    <p>Link to the Database Schema Design: </p>
     <a href="https://drawsql.app/teams/nana-papi/diagrams/team-fenom"><strong>Database Schema Design 🔗</strong></a>
     <br />
     <br />
-    <a href="https://openapi-server.vercel.app/docs">Endpoints Docummentation 🔗</a>
+    <p>Link to the Api Design: </p>
+    <a href="">Endpoints Docummentation 🔗</a>
     
   </p>
 
