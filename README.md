@@ -23,7 +23,7 @@ This API serves as a foundation for managing various entities such as organisati
     <br />
     <br />
     <p>Link to the Api Design: </p>
-    <a href="">Endpoints Docummentation 🔗</a>
+    <a href="https://swagger-api-boilerplate-production.up.railway.app/docs/#/">Endpoints Docummentation 🔗</a>
     
   </p>
 
