@@ -16,7 +16,16 @@ This repository contains a boilerplate for an API designed using OpenAPI 3.0. It
 ## Introduction
 This API serves as a foundation for managing various entities such as organisations, contents (blogs or articles), users, and contact messages. It follows the OpenAPI 3.0 specification and is designed to be straightforward to integrate and extend.
 
-https://drawsql.app/teams/nana-papi/diagrams/team-fenom
+  <p align="center">
+    <br />
+    <a href="https://drawsql.app/teams/nana-papi/diagrams/team-fenom"><strong>Database Schema Design 🔗</strong></a>
+    <br />
+    <br />
+    <a href="https://openapi-server.vercel.app/docs">Endpoints Docummentation 🔗</a>
+    
+  </p>
+
+
 
 ## Setup
 To set up this project locally, follow these steps:
